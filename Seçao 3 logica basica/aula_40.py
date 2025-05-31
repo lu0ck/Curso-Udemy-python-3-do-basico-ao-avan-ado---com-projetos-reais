@@ -48,8 +48,22 @@ while True:
     if len(operador) > 1:
         print('Digite apenas um operador.')
         continue
-
-    ###
+    if operador == '+':
+        resultado = float(numero_1) + float(numero_2)
+        print(f'{numero_1} + {numero_2} = {resultado}')
+    elif operador == '-':
+        resultado = float(numero_1) - float(numero_2)
+        print(f'{numero_1} - {numero_2} = {resultado}')
+    elif operador == '*':
+        resultado = float(numero_1) * float(numero_2)
+        print(f'{numero_1} * {numero_2} = {resultado}')
+    elif operador == '/':
+        if float(numero_2) == 0:
+            print('Não é possível dividir por zero.')
+        else:
+            resultado = float(numero_1) / float(numero_2)
+            print(f'{numero_1} / {numero_2} = {resultado}')
+    
 
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
 
