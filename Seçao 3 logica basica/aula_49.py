@@ -14,9 +14,9 @@ lista = [10, 20, 30, 40]
 # del lista[2]
 # print(lista)
 # print(lista[2])
-lista.append(50)
-lista.pop()
+lista.append(50) #append adiciona ao final da lista
+lista.pop() #pop remove o último elemento
 lista.append(60)
 lista.append(70)
-ultimo_valor = lista.pop(3)
+ultimo_valor = lista.pop(3) #pop remove o elemento na posição 3
 print(lista, 'Removido,', ultimo_valor)
